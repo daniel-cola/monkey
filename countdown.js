@@ -14,7 +14,7 @@ class CountdownInfo {
 }
     
 let createCountdown = (name, interval) => {
-    let cd = countdowns.get(name)
+    let cd = countdowns[name]
     if(cd == null){
         cd = new CountdownInfo(name, interval)
         countdowns[name] = cd
